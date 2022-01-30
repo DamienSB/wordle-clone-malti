@@ -127,7 +127,7 @@ class App extends React.Component {
     var tempKeyboardStyle = this.state.keyboardStyle;
 
     for(var x in guessWord){
-      if((tempKeyboardStyle[guessWord[x]] == "correct") && (rowStyle[x]=="present")){
+      if((tempKeyboardStyle[guessWord[x]] === "correct") && (rowStyle[x]==="present")){
         tempKeyboardStyle[guessWord[x]] = "correct"
       }else{
         tempKeyboardStyle[guessWord[x]]= rowStyle[x]
@@ -144,7 +144,8 @@ class App extends React.Component {
           case 'correct':tempShareText+="🟩"; break;
           case 'present':tempShareText+="🟨";break;
           case 'absent':tempShareText+="⬛";break;
-          case '':tempShareText+="";break
+          case '':tempShareText+="";break;
+          default:break;
         }
       }
       tempShareText+="\n";

@@ -2,11 +2,6 @@ import './App.css';
 import React from 'react';
 
 class EndPopup extends React.Component{
-    
-    constructor(props){
-        super(props);   
-       
-    }
 
     checkGameState(gameState){
        if(gameState === "playing"){
@@ -49,11 +44,11 @@ class EndPopup extends React.Component{
                     <button className="popup-button" onClick={()=>this.copyMessage()}>SHARE</button>              
                     <br></br>
                     <popup-small-text>
-                        Kliem ġie meħud minn <a href="https://mlrs.research.um.edu.mt/resources/gabra/" target='_blank'>Ġabra</a>
+                        Kliem ġie meħud minn <a href="https://mlrs.research.um.edu.mt/resources/gabra/" target='_blank' rel="noreferrer">Ġabra</a>
                     </popup-small-text>
                     <br></br>
                     <popup-small-text>
-                        Ibbażat fuq il-logħba <a href="https://www.powerlanguage.co.uk/wordle/" target='_blank'>Wordle</a> ta' <a href="https://twitter.com/powerlanguish" target='_blank'>Josh Wardle</a> 
+                        Ibbażat fuq il-logħba <a href="https://www.powerlanguage.co.uk/wordle/" target='_blank' rel="noreferrer">Wordle</a> ta' <a href="https://twitter.com/powerlanguish" target='_blank' rel="noreferrer">Josh Wardle</a> 
                     </popup-small-text>
                     <br></br>
                     <popup-small-text>
@@ -62,7 +57,7 @@ class EndPopup extends React.Component{
                     <br></br>
                     <br></br>
                     <popup-small-text>
-                    <a href='https://ko-fi.com/A0A8581I4' target='_blank'><img height='36'  src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+                    <a href='https://ko-fi.com/A0A8581I4' target='_blank' rel="noreferrer"><img height='36'  src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
                     </popup-small-text>
                     <br></br>
                     <br></br>

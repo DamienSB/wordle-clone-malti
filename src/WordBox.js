@@ -3,12 +3,6 @@ import LetterBox from './LetterBox';
 
 import React from 'react';
 class WordBox extends React.Component{
-    constructor(props){
-        super(props);
-
-    }
-
-
     render(){
         return(
         <div className="wordRow">
