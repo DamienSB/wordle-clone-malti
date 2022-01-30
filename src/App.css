@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color:#3d3d3d;
+    ;
+}
+
+wordle-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+letter-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    min-height:  50px;
+    
+    max-width: fit-content;
+    max-height:fit-content;
+    
+    border-style:solid;
+    border-width: 0px;
+    border-radius: 4px;
+    text-align: center;
+    /* border-color: #3d3d3d; */
+
+    font-size:xx-large;
+    
+    margin: 2px;
+
+    background-color: inherit;
+
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    /* padding: 10px 10px 10px 10px; */
+}
+
+
+
+.pointer-cursor{
+    cursor: pointer;
+}
+
+.default{
+    background-color: #ffffff;
+    color: black;
+} 
+.correct{
+    background-color: #538d4e;
+}
+  
+.present{
+    background-color: #b59f3b;
+}
+  
+.absent{
+    background-color: #212121;
+}
+
+.wordContainer{
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+  
+.wordRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+  
+.keyboardContainer{
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+  
+.keyboardRow{
+    flex-wrap: wrap;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    width: 100%;
+}
+
+popup-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    padding:0% 0% 0% 0%;
+    margin:0% 0% 0% 0%;
+
+  }
+
+popup-card{
+    background-color:#3d3d3d;
+
+    /* background: #fff; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: fit-content;
+    text-align: center;
+
+}
+a{
+    color: inherit;
+}
+popup-title{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-size: xx-large;
+}
+popup-word{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-size: large;
+}
+
+popup-small-text{
+    /* position: fixed;
+
+    width: 100%;
+    height: fit-content; */
+    width: 100%;
+    text-align: center;
+}
+
+.popup-button{
+    cursor: pointer;
+    background-color: inherit;
+    font-size: xx-large;
+    color: #fff;
+    font-weight: bold;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 25%; */
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+
+    width: 90%;
+}
+
+.errorMessage{
+    animation-duration: 1s;
+    animation-name: shake;
+    text-align: center;
+    width: 100%;
+    align-self: center; 
+    font-weight: bold;
+}
+
+.errorMessage-hidden{
+   visibility:hidden;
+}
+
+  @keyframes shake {
+    
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    25% {
+        transform: translate(10px, 0px) rotate(0deg);
+    }
+    50% {
+        transform: translate(-10px, 1px) rotate(0deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
