@@ -53,7 +53,7 @@ class EndPopup extends React.Component{
                     </popup-small-text>
                     <br></br>
                     <popup-small-text>
-                        Ibbażat fuq il-logħba <a href="https://www.powerlanguage.co.uk/wordle/" target='_blank'>Wordle</a>
+                        Ibbażat fuq il-logħba <a href="https://www.powerlanguage.co.uk/wordle/" target='_blank'>Wordle</a> ta' <a href="https://twitter.com/powerlanguish" target='_blank'>Josh Wardle</a> 
                     </popup-small-text>
                     <br></br>
                     <popup-small-text>
