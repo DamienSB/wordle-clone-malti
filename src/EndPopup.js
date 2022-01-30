@@ -52,7 +52,7 @@ class EndPopup extends React.Component{
                     </popup-small-text>
                     <br></br>
                     <popup-small-text>
-                        Magħmul bl-🎔 minn Damien SB
+                        Magħmul minn Damien SB
                     </popup-small-text>
                     <br></br>
                     <br></br>
